@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        h2 {
+            text-align: center;
+            font-weight: 700;
+            margin: auto;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        main section {
+            background-color: #f1f1f1;
+        }
+
+        .layout {
+            width: min-content;
+            padding: 8px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        .results {
+            width: 210px;
+            padding: 8px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        .lay,
+        .digits,
+        .header {
+            display: flex;
+            align-items: center;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        .header {
+            margin-bottom: 8px;
+        }
+
+        .get_number {
+            padding: 8px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            width: 100%;
+            outline: none;
+            user-select: none;
+        }
+
+        li {
+            list-style: none;
+            margin-bottom: 8px;
+        }
+
+        .other {
+            display: grid;
+        }
+
+        .id,
+        .id_ot#sum {
+            height: 42px;
+        }
+
+        .id,
+        .id_ot,
+        .id_del {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 4px;
+            border-radius: 4px;
+            width: 42px;
+
+            background-color: #ccc;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        li,
+        button {
+            user-select: none;
+        }
+
+        .id_del {
+            height: 32px;
+            background-color: #ca402b;
+            margin: 0;
+        }
+
+        .id_del:hover {
+            background-color: #ad2611;
+        }
+
+        #esc {
+            height: 42px;
+        }
+
+        #btn {
+            height: 42px;
+            width: 100%;
+            background-color: #caa22b;
+        }
+
+        #btn:hover {
+            background-color: #b89018;
+        }
+
+        .id:hover, .id_ot:hover {
+            background-color: #8e9cb6;
+        }
+
+        .char:hover {
+            background-color: #7da7a0;
+        }
+
+        #zero {
+            height: 92px;
+        }
+
+        button {
+            border: none;
+            outline: none;
+            user-select: none;
+        }
+
+        p {
+            margin-bottom: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Calculadora</h2>
+    <main>
+        <section class="layout">
+            <div class="header">
+                <input class="get_number" type="text" placeholder="Coloque o número"/>
+                <button id="del" class="id_del" type="button">Del</button>
+            </div>
+            <div class="content">
+                <div class="main">
+                    <div class="lay _01">
+                        <li class="id char" id="div" data-name="/">/</li>
+                        <li class="id char" id="mul" data-name="*">*</li>
+                        <li class="id char" id="min" data-name="-">-</li>
+                        <li class="id_ot char" id="sum" data-name="+">+</li>
+                    </div>
+                    <div class="digits">
+                        <div class="numbers">
+                            <div class="lay _02">
+                                <li class="id" id="sev" data-name="7">7</li>
+                                <li class="id" id="eig" data-name="8">8</li>
+                                <li class="id" id="nin" data-name="9">9</li>
+                            </div>
+
+                            <div class="lay _03">
+                                <li class="id" id="fou" data-name="4">4</li>
+                                <li class="id" id="fiv" data-name="5">5</li>
+                                <li class="id" id="six" data-name="6">6</li>
+                            </div>
+
+                            <div class="lay _04">
+                                <li class="id" id="one" data-name="1">1</li>
+                                <li class="id" id="two" data-name="2">2</li>
+                                <li class="id" id="thr" data-name="3">3</li>
+                            </div>
+                        </div>
+
+                        <div class="other">
+                            <li class="id_ot" id="zero" data-name="0">0</li>
+                            <button id="esc" class="id_del" type="button">C</button>
+                        </div>
+                    </div>
+
+
+                </div>
+                <button class="id" id="btn">Calcular</button>
+            </div>
+        </section>
+        <section class="results">
+            <h3>Resultados</h3>
+        </section>
+    </main>
+</body>
+<script src="tabuada.js"></script>
+
+</html>

@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+section {
+    margin: 0 auto;
+}
+
+form {
+    display: grid;
+    max-width: 540px;
+    /* max-width: 500px; */
+    padding: 8px;
+    border-radius: 8px;
+    background-color: #eee;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 22px;
+}
+
+h2 {
+    text-align: center;
+}
+
+label {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px;
+}
+
+input, select {
+    padding: 8px;
+    border: 1px solid #000;
+    border-radius: 8px;
+    outline: none;
+    width: 200px;
+}
+
+button {
+    padding: 8px;
+    border: 1px solid #000;;
+    border-radius: 8px;
+    outline: none;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 16px;
+}
+
+/* FORMULÁRIO 2 */
+form.form {
+    background-color: #feffe1;
+}
+
+.header, .client, .main {
+    border-bottom: 2px solid;
+    padding: 6px 0;
+}
+
+.final_name, .total_value {
+    display: flex;
+    align-items: center;
+}
+
+.info_, .id_ {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user_name, .info_ h3, .info_ p, .total_value h3{
+    margin-right: 8px;
+}
+
+/* Tabela */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 4px;
+    text-align: left;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 16px;
+}
+
+.total_value {
+    margin-top: 16px;
+}

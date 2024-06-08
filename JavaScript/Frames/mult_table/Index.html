@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Montserrat", sans-serif;
+        }
+
+
+        .layout,
+        .main,
+        form,
+        .result {
+            margin: 0 auto;
+        }
+
+        h1, h3 {
+            text-align: center;
+        }
+
+        .main form,
+        .result {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #eee;
+            width: 450px;
+        }
+
+        .result {
+            height: 275px;
+            margin-top: 16px;
+        }
+
+        .data {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 8px;
+        }
+
+        input,
+        select {
+            padding: 4px 8px;
+            border-radius: 8px;
+            border: none;
+            user-select: none;
+            height: 34px;
+            background-color: #fff;
+            margin-top: 8px;
+            width: 200px;
+        }
+
+        h3 {
+            font-weight: 600;
+        }
+
+        .submit {
+            background: #ffb300;
+            font-weight: 600;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        span {
+            color: #808080;
+            user-select: none;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="layout">
+        <h1>Tabuada</h1>
+        <div class="main">
+            <form action="" id="form" method="get">
+                <div class="data">
+                    <label for="number">
+                        <h3>Coloque o número:</h3>
+                        <input type="number" name="number" id="number" min="1" step="1">
+                    </label>
+                    <label for="symbol">
+                        <h3>Selecione a operação:</h3>
+                        <select name="symbol" id="symbol">
+                            <option value="+">Adição (+)</option>
+                            <option value="-">Subtração (-)</option>
+                            <option value="*">Multiplicação (*)</option>
+                            <option value="/">Divisão (/)</option>
+                        </select>
+                    </label>
+                </div>
+                <input type="submit" class="submit" id="submit" value="Calcular">
+            </form>
+        </div>
+        <div class="result">
+            <h3>Resultado</h3>
+            <div class="output"></div>
+        </div>
+    </section>
+</body>
+<script src="./Script.js"></script>
+
+</html>

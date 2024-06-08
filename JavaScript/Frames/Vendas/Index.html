@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Loja do José - Tecnologia e Informática</title>
+</head>
+
+<body>
+    <section class="section">
+        <h2 class="title">
+            Formulário de vendas
+        </h2>
+        <form method="get" id="form">
+            <h1 class="title">
+                PREENCHA O FORMULÁRIO PARA CONCLUIR A VENDA PARA O CLIENTE
+            </h1>
+
+            <div class="get_data">
+                <label for="name">
+                    <p class="user_name">Coloque o nome do cliente:</p>
+                    <input type="text" name="name" id="name">
+                </label>
+                <label for="product">
+                    <p class="user_product">Coloque o produto:</p>
+                    <select name="product" id="product">
+                        <option value="Memória Ram 8 Gb">Memória Ram 8 Gb</option>
+                        <option value="Processador Core i-5">Processador Core i-5</option>
+                        <option value="HD 500 Gb">HD 500 Gb</option>
+                        <option value="SSD 256 Gb">SSD 256 Gb</option>
+                    </select>
+                </label>
+                <label for="value">
+                    <p class="user_value">Coloque o valor da venda:</p>
+                    <input type="number" name="value" id="value">
+                </label>
+                <label for="amount">
+                    <p class="user_amount">Coloque a quantidade de produtos:</p>
+                    <input type="number" name="amount" id="amount" min="1" step="1">
+                </label>
+            </div>
+
+            <button type="submit" id="send">Concluir Venda</button>
+        </form>
+    </section>
+</body>
+<script src="./Script.js"></script>
+
+</html>

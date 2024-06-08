@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <section class="layout">
+        <h1 class="title">Bem Vindo(a)</h1>
+        <span class="wdg">JS WIDGETS</span>
+        <div class="context">
+            <div class="acnt">
+                <input type="button" class="act_btn lgn" id="lgn" value="Fazer Login">
+                <input type="button" class="act_btn sgn" id="sgn" value="Criar Conta">
+            </div>
+        </div>
+    </section>
+    <section class="login off">
+        <div class="main">
+            <form action="" method="get" class="act_form" id="act_lgn" name="act_lgn">
+                <div class="datas">
+                    <label for="mail_lgn" class="lb_mail">
+                        <p class="inf_lgn">E-mail:</p>
+                        <input type="email" name="mail_lgn" id="mail_lgn" aria-required="true">
+                    </label>
+                    <label for="pass_lgn" class="lb_pass">
+                        <p class="inf_lgn">Senha:</p>
+                        <input type="text" name="pass_lgn" id="pass_lgn" aria-required="true">
+                    </label>
+                </div>
+                <span class="back" id="back_lgn">Retornar à Página Inicial</span>
+                <input type="submit" class="submit" id="submit_lgn" value="Login">
+            </form>
+        </div>
+        <div class="layout">
+            <span class="wdg">JS WIDGETS</span>
+            <h1 class="title">Fazer Login</h1>
+            <div class="info">
+                <h3 class="p_info">Bem vind@</h3>
+                <p class="p_info">
+                    Faça login em sua conta e aproveite <br>
+                    WIDGETS criados usando Java Script!
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="sign off">
+        <div class="main">
+            <form action="" method="get" class="act_form" id="act_sgn" name="act_sgn">
+                <div class="datas">
+                    <label for="nm_sgn" class="lb_nm">
+                        <p class="inf_sgn">Nome:</p>
+                        <input type="text" name="nm_sgn" id="nm_sgn" aria-required="true" required>
+                    </label>
+                    <label for="mail_sgn" class="lb_mail">
+                        <p class="inf_sgn">E-mail:</p>
+                        <input type="email" name="mail_sgn" id="mail_sgn" aria-required="true" required>
+                    </label>
+                    <label for="pass_sgn" class="lb_pass">
+                        <p class="inf_sgn">Senha:</p>
+                        <input type="text" name="pass_sgn" id="pass_sgn" aria-required="true" required>
+                    </label>
+                </div>
+                <span class="back" id="back_gn">Retornar à Página Inicial</span>
+                <input type="submit" class="submit" id="submit_sgn" value="Increver-se">
+            </form>
+        </div>
+        <div class="layout">
+            <span class="wdg">JS WIDGETS</span>
+            <h1 class="title">Increver-se</h1>
+            <div class="info">
+                <h3 class="p_info">Bem vind@</h3>
+                <p class="p_info">
+                    Crie uma conta grátis para aproveitar <br>
+                    WIDGETS criados usando Java Script!
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="home off">
+        <div class="home_login layout">
+            <span class="close">Sair</span>
+        </div>
+        <div class="frames">
+            <div class="frame">
+                <iframe src="../Frames/mult_table/Index.html" frameborder="0"></iframe>
+            </div>
+            <div class="frame">
+                <iframe src="../Frames/Vendas/Index.html" frameborder="0"></iframe>
+            </div>
+            <div class="frame">
+                <iframe src="../Frames/calculator/index.html" frameborder="0"></iframe>
+            </div>
+        </div>
+        <div class="change_pass off">
+            <form action="" method="get" id="change_pass" name="change_pass">
+                <h2>Trocar senha</h2>
+                <div class="data">
+                    <label for="old_pass">
+                        <p class="old_pass">Senha atual:</p>
+                        <input type="text" name="old_pass" id="old_pass" aria-required="true">
+                    </label>
+                    <label for="new_pass">
+                        <p class="new_pass">Nova senha:</p>
+                        <input type="text" name="new_pass" id="new_pass" aria-required="true">
+                    </label>
+                </div>
+                <span class="home_back" id="back_sgn">Retornar à Página Inicial</span>
+                <input type="submit" class="submit" id="submit_pass" value="Alterar senha">
+            </form>
+        </div>
+    </section>
+</body>
+<script src="./Script.js"></script>
+
+</html>
